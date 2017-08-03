@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多行文本垂直居中</title>
+    <style>
+
+        .middle-box{
+            display: table;
+            height: 300px;
+            border:1px solid #ff0000;
+            width:400px;
+            margin:0 auto;
+            position:relative;
+        }
+        .middle-inner{
+            display: table-cell;
+            vertical-align: middle;
+            *position:absolute;
+            *top:50%;
+            *left:50%;
+            width:100%;
+            text-align:center;
+            word-break:break-all;
+        }
+    </style>
+</head>
+<body>
+<div class="middle-box" >
+    <div class="middle-inner">
+    <p><span>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    </span></p>
+</div>
+</div>
+</body>
+</html>
