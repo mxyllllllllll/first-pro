@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>豆瓣-首页</title>
+    <title>豆瓣 - 首页</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <div id="nav">
-    <div class="wrap"style="height: 84px;">
+    <div class="wrap" style="height: 84px;">
         <a id="logo" href="#">
             <img src="img/logo.png" alt="">
         </a>
         <div id="search-box">
-            <input type="text"id="ipt-search" placeholder="书籍、电影、音乐、小组、小站、成员" >
+            <input type="text" id="ipt-search" placeholder="书籍、电影">
             <button id="btn-search"></button>
         </div>
         <ul id="nav-menu">
             <li>
-                <a href="#"class="read">读书</a>
+                <a href="#" class="read">读书</a>
             </li>
-            <li><a href="#" class="moive">电影</a></li>
+            <li><a href="#" class="movie">电影</a></li>
             <li><a href="#" class="music">音乐</a></li>
             <li><a href="#" class="group">小组</a></li>
             <li><a href="#" class="city">同城</a></li>
@@ -28,12 +28,84 @@
             <li><a href="#" class="time">时间</a></li>
             <li><a href="#" class="market">集市</a></li>
         </ul>
-        </div>
-    </div>
-<div id="annoy-reg-new">
-    <div class="wrap ">
-        <div id="phone"></div>
     </div>
 </div>
+<div id="banner">
+    <div class="wrap">
+        <div class="app">
+            <h1>豆瓣5.0</h1>
+            <p>我们的精神角落</p>
+            <div class="download">
+                <a href="#" class="btn-download">下载豆瓣 App</a>
+                <img src="img/green.png" alt="">
+            </div>
+        </div>
+        <form action="" class="login-form">
+            <p class="bg-fff">
+                <input type="text" name="email" class="email" placeholder="邮箱 / 手机号">
+            </p>
+            <p class="bg-fff">
+                <input type="password" name="password" class="password" placeholder="密码">
+                <a href="#" class="help">帮助</a>
+            </p>
+            <p>
+                <input type="submit" class="btn login" value="登录豆瓣">
+                <input id="btn-register" type="button" class="btn register" value="注册账号">
+            </p>
+            <div>
+                <input type="checkbox" class="remember-me">记住我
+                <ul class="other-login">
+                    <li><a href="#"><img src="img/wechat.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/weibo.png" alt=""></a></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="mask" id="mask"></div>
+<div class="dialog" id="dialog"></div>
+<div id="book">
+    <div class="wrap">
+        <a href="#"><img src="img/book.jpg" alt=""></a>
+        <div class="ad">
+           广告
+        </div>
+        </div>
+</div>
+<div class="hot-concent">
+    <div class="wrap">
+        <div class="headline">
+            <h3>热门内容
+                &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h3>
+        </div>
+            <span>&nbsp;(<a href="#">更多</a>）</span>
+
+    <div class="photo"></div>
+    <div class="word"></div>
+    <div class="topic"></div>
+    </div>
+</div>
+
+
+
+<!--解决IE6不支持PNG透明问题-->
+<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+    DD_belatedPNG.fix('*');
+</script>
+<script>
+
+    var btn = document.getElementById('btn-register');
+    var mask = document.getElementById('mask');
+    var dialog = document.getElementById('dialog');
+    btn.onclick = function () {
+        mask.style.display = 'block';
+        dialog.style.display = 'block';
+    };
+    mask.onclick = function () {
+        mask.style.display = 'none';
+        dialog.style.display = 'none';
+    };
+</script>
 </body>
 </html>
