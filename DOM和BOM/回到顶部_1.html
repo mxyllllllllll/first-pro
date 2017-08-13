@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回到顶部</title>
+    <style>
+        #goTop{
+            width: 30px;
+            height: 30px;
+            background: #ff0000;
+            text-align: center;
+            line-height: 30px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+ <div id="goTop">GO!</div>
+ <h1>haha</h1>
+ <script>
+     var goTop = document.getElementById('goTop');
+     goTop.onclick = function () {
+         var scrollTop = document.documentElement.scrollTop ||document.body.scrollTop;
+         var timer = setInterval(function () {
+
+             window.scrollTo( 0, scrollTop-=10 );
+             if(scrollTop<=0) {
+                 clearInterval(timer);
+             }
+
+
+         } , 30);
+
+     };
+
+
+
+
+ </script>
+</body>
+</html>
