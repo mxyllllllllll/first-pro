@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转骰子</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000;
+            perspective: 1000px;
+            perspective-origin: 50% 50%;
+        }
+        #container{
+            width: 400px;
+            height: 400px;
+            /*background: #ff0000;*/
+            /*opacity: 0.5;*/
+            margin: 150px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 2s linear infinite;
+
+        }
+        .cube{
+            width: 400px;
+            height: 400px;
+            background: #FFFFFF;
+            opacity: 0.5;
+            font-size: 150px;
+            text-align: center;
+            line-height: 400px;
+            border-radius: 10% 10%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .one{
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        .two{
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+
+        .three{
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        .six{
+            transform: translateZ(200px);
+        }
+        .five{
+            transform: rotateX(90deg) translateZ(200px);
+        }
+        .four{
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+        @keyframes rotate {
+            from
+            {
+
+            }
+            to{
+                transform: rotateY(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="cube one">1</div>
+    <div class="cube two">2</div>
+    <div class="cube three">3</div>
+    <div class="cube four">4</div>
+    <div class="cube five">5</div>
+    <div class="cube six">6</div>
+</div>
+
+</body>
+</html>
