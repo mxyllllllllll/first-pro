@@ -1,0 +1,183 @@
+#header{
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid #CCCCCC;
+    position: relative;
+
+}
+.menu{
+    height: 100px;
+    width: 30%;
+    margin: 0 40px;
+    float: left;
+    position: absolute;
+}
+.s_menu{
+    height:46px;
+    position: absolute;
+    top: 25%;
+    cursor: pointer;
+
+}
+.menu img{
+    float: left;
+}
+.menu span{
+    padding-left: 3px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+}
+.logo{
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: 13px;
+    left: 47%;
+
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+
+}
+.member{
+    height: 100px;
+    width: 30%;
+    margin: 0 40px;
+    float: right;
+
+}
+.member1{
+    float: right;
+    margin-top: 25px;
+}
+.member span{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.member1 a{
+    color: #b89f7a;
+    cursor: pointer;
+}
+#bg_coffee{
+    position: relative;
+}
+#bg_coffee img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+#bg_coffee .ad{
+    font-size:14px ;
+    padding: 2px 5px;
+    line-height: 21px;
+    text-align: center;
+    background: #000000;
+    opacity: .7;
+    color: #CCCCCC;
+    position: absolute;
+    top:20px;
+    right: 40px;
+}
+#bg_coffee .more{
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+#club{
+    background: #0f0f0f;
+
+}
+.container{
+    margin-right: 120px;
+    margin-left: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#club .container{
+    position: relative;
+}
+.club-mask{
+    width: 350px;
+    height: 220px;
+    background:url(../img/rewards_bg的副本.png) no-repeat ;
+    background-size: contain;
+    margin-left: 200px;
+    position: relative;
+
+}
+.club-mask-small{
+    width: 160px;
+    height: 59px;
+    position: absolute;
+    top:75px;
+    left: 100px;
+
+}
+.club-mask img{
+    width: 160px;
+}
+.club-mask p{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.club-content{
+  position: absolute;
+    top: 50px;
+    left: 580px;
+
+}
+.club-content-title{
+    color: #FFFFFF;
+    font-size: 26px;
+}
+.club-content-text{
+    color: #FFFFFF;
+}
+.club-content-btn{
+    margin-top: 25px;
+}
+.club-content-btn a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #a98e67;
+    border: 2px solid #a98e67;
+    padding: 14px 40px;
+    cursor: pointer;
+}
+.club-content-btn span{
+    font-size: 16px;
+    color: #a98e67;
+    margin-left: 45px;
+    cursor: pointer;
+}
+#app{
+    background:url(../img/app_bg.gif) repeat scroll center;
+}
+#app .container{
+    position: relative;
+}
+.app-phone img{
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 200px;
+}
+.app-download{
+    position: absolute;
+    top: 20px;
+    left: 38%;
+
+}
+.code img{
+    width:130px;
+}
+
+
+
+
+
+
+
