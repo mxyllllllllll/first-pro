@@ -8,7 +8,7 @@
 .menu{
     height: 100px;
     width: 30%;
-    margin: 0 40px;
+    padding: 0 36px;
     float: left;
     position: absolute;
 }
@@ -30,13 +30,14 @@
 }
 .logo{
     height: 100px;
+    width: 30%;
     float: left;
     position: absolute;
-    top: 13px;
-    left: 47%;
+    left: 35%;
 
 }
 .logo img{
+     ;
     width: 80px;
     height: 80px;
 
@@ -44,7 +45,7 @@
 .member{
     height: 100px;
     width: 30%;
-    margin: 0 40px;
+    padding: 0 36px;
     float: right;
 
 }
@@ -59,6 +60,29 @@
 .member1 a{
     color: #b89f7a;
     cursor: pointer;
+}
+@media (max-width:1440px ) {
+    #header{
+        width: 100%;
+    }
+    .menu{
+        padding: 0 2.5%;
+        width: 30%;
+    }
+    .logo{
+        width: 30%;
+    }
+    .logo img{
+        position: absolute;
+        left: 40%;
+    }
+
+    .member{
+        padding: 0 2.5%;
+        width: 30%;
+    }
+
+
 }
 #bg_coffee{
     position: relative;
