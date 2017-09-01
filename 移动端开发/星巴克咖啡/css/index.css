@@ -191,16 +191,301 @@
 }
 .app-download{
     position: absolute;
-    top: 20px;
-    left: 38%;
+    top: 10px;
+    left: 450px;
 
 }
 .code img{
     width:130px;
 }
 
+.android {
+    width: 100px;
+    height: 36px;
+    position: absolute;
+    bottom: -60px;
+    right: -120px;
+}
+.android a{
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #999999;
+}
+.android p{
+    font-size: 13px;
+    width: 70px;
+    float: right;
+    margin-right: 8px;
+    padding-left: 5px;
+    border-left: 1px solid #000000;
+
+}
+.app-content{
+     position: absolute;
+     top: 30%;
+     right: 20px;
+
+ }
+.app-content-text{
+    width: 450px;
+    font-size: 24px;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+.app-content span{
+    font-size: 14px;
+    color: #b89f7a;
+}
+#banner img{
+    width: 100%;
+    display: block;
+}
+#mosaic{
+    position: relative;
+    width: 100%;
+    height: 713px;
+}
+.mosaic-cat{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mosaic-cat img{
+    width:720px;
+    height: 713px;
+}
+.mosaic-coffee{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.mosaic-coffee img{
+    width:720px;
+    height:713px;
+}
+#mosaic h2{
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+
+}
+#mosaic h3{
+    font-size: 13px;
+    color: #a98e67;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}
+#wsg{
+    width: 100%;
+    height: 222px;
+    background: #106e4b;
+}
+#wsg .container{
+    position: relative;
+}
+.wsg-left{
+    width: 390px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left:175px;
+
+}
+.wsg-right{
+    width: 390px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    right:175px;
+}
+.wsg-left-title{
+    width: 175px;
+    height: 90px;
+    float: left;
+    margin-top: 55px;
+    margin-left: 40px;
+    background: url("../img/wsg-title.png") no-repeat;
+    background-size: contain;
+}
+.wsg-left-code{
+    width: 106px;
+    height: 106px;
+    margin-top: 38px;
+    margin-left: 25px;
+    float: right;
+    background: url("../img/wsg-qrcode的副本.png") no-repeat;
+    background-size: contain;
+}
+.wsg-right-cup{
+    width: 106px;
+    height: 106px;
+    margin-top: 38px;
+    float: left;
+    background: url("../img/wsg-cup.png")no-repeat;
+    background-size: contain;
+}
+.wsg-right-title{
+    width: 175px;
+    height: 90px;
+    float: right;
+    margin-top: 55px;
+    margin-right: 60px;
+    background: url("../img/wsg-wording.png") no-repeat;
+    background-size: contain;
+}
+#watch{
+    background: url("../img/web-bg.png") repeat-x;
+}
+#watch .watch-img{
+    width: 408px;
+    height: 220px;
+    margin-left: 70px;
+    background: url("../img/web-iwatch-cn.png") center no-repeat;
+    background-size: cover;
+}
+#watch .container{
+    position: relative;
+}
+.watch-title{
+    width: 480px;
+    line-height: 1.8;
+    position:absolute ;
+    top:30px;
+    left: 560px;
+}
+.watch-title p{
+    width: 344px;
+    font-size: 18px;
+    color: #3d3d3d;
+}
+.watch-title span{
+    font-size: 14px;
+    color: #b89f7a;
+}
+.watch-code {
+    position: absolute;
+    right: 70px;
+    top: 30px;
+}
+.watch-code img{
+    width: 130px;
+    height: 130px;
+
+}
+.watch-code span{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 18px;
+
+}
+#collection{
+    background: #f5f5f5;
+    padding: 80px 16px;
+}
+#collection h1{
+    text-align: center;
+}
+.collection-title {
+    font-size: 18px;
+    margin: 20px 0 80px 0;
+    text-align: center;
+}
+.collection-img{
+    height: 280px;
+    margin:  0 20px;
+    position: relative;
+}
+#collection img{
+    width: 240px;
+    height: 160px;
+}
+#collection h2{
+    width: 240px;
+    font-size: 20px;
+    text-align: center;
+}
+.collection-img1{
+    width: 240px;
+    height: 280px;
+    border: 1px solid #CCCCCC;
+    margin: 0 15px 15px 15px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.collection-img2{
+    width: 240px;
+    height: 280px;
+    margin: 0 15px 15px 15px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top:0;
+    left: 270px;
 
 
+}
+.collection-img3{
+    width: 240px;
+    height: 280px;
+    margin: 0 15px 15px 15px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top:0;
+    left: 540px;
+
+}
+.collection-img4{
+    width: 240px;
+    height: 280px;
+    margin: 0 15px 15px 15px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top:0;
+    left: 810px;
+}
+.collection-img p{
+    width:240px;
+    font-size: 15px;
+    text-align: center;
+}
+#black{
+    height: 608px;
+    background: #060608;
+}
+.black-img{
+    float: left;
+}
+.black-cell{
+    width: 50%;
+    float: right;
+    margin: 160px 0;
+    text-align: center;
+}
+.black-cell h3{
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+    color: #b89f7a;
+}
+.black-cell p{
+    font-size: 19px;
+    line-height: 28px;
+    color: #707070;
+}
+.black-cell-btn{
+    margin-top: 40px;
+}
+.black-cell-btn a{
+    color: #b89f7a;
+    border: 2px solid #b89f7a;
+    padding: 14px 40px;
+}
 
 
 
