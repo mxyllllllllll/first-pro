@@ -385,7 +385,7 @@
 }
 #collection{
     background: #f5f5f5;
-    padding: 80px 16px;
+    padding: 100px 16px;
 }
 #collection h1{
     text-align: center;
@@ -486,7 +486,24 @@
     border: 2px solid #b89f7a;
     padding: 14px 40px;
 }
+#menu{
+    height: 800px;
+    padding: 60px 0;
+    background: #292929;
+}
+#menu h3{
+    color: #FFFFFF;
+}
+#menu a{
+    margin-top: 8px;
+    color: #CCCCCC;
+    display: block;
+    cursor: pointer;
+}
 
-
-
+#menu .block-item{
+    width: 292px;
+    height: 270px;
+    float: left;
+}
 
