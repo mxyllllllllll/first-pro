@@ -159,14 +159,15 @@
     padding-right: 15px;
 }
 #club .container{
-    position: relative;
+    height: 220px;
 }
 .club-mask{
     width: 350px;
     height: 220px;
+    margin-left: 150px;
     background:url(../img/rewards_bg的副本.png) no-repeat ;
     background-size: contain;
-    margin-left: 200px;
+    float: left;
     position: relative;
 
 }
@@ -186,9 +187,8 @@
     color: #FFFFFF;
 }
 .club-content{
-  position: absolute;
-    top: 50px;
-    left: 580px;
+    padding: 40px 240px 40px 0;
+    float: right;
 
 }
 .club-content-title{
@@ -220,17 +220,17 @@
         width: 100%;
     }
     #club .container{
+        width: 81.25%;
         margin-right: 8.33%;
         margin-left: 8.33%;
     }
-    #club .club-mask{
-        margin-left: 13.88%;
-    }
-    #club .club-mask-small{
-        left: 7%;
+    .club-mask{
+        margin-left: 10.4%;
     }
 
 }
+
+
 
 #app{
     background:url(../img/app_bg.gif) repeat scroll center;
