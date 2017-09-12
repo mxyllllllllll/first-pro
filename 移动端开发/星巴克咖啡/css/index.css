@@ -153,22 +153,30 @@
 
 }
 .container{
-    margin-right: 120px;
-    margin-left: 120px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /*margin-right: 120px;*/
+    /*margin-left: 120px;*/
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+    /*width: 1150px;*/
+    margin: 0 auto;
 }
+
 #club .container{
-    height: 220px;
+    background: #0f0f0f;
+    width: 780px;
+    overflow: hidden;
+    position: relative;
+
+
+
 }
 .club-mask{
     width: 350px;
     height: 220px;
-    margin-left: 150px;
+    float: left;
     background:url(../img/rewards_bg的副本.png) no-repeat ;
     background-size: contain;
-    float: left;
-    position: relative;
+
 
 }
 .club-mask-small{
@@ -187,7 +195,8 @@
     color: #FFFFFF;
 }
 .club-content{
-    padding: 40px 240px 40px 0;
+    width: 420px;
+    margin-top:40px ;
     float: right;
 
 }
@@ -201,176 +210,251 @@
 .club-content-btn{
     margin-top: 25px;
 }
+.club-content-btn div{
+    display: table;
+    border: 2px solid #a98e67;
+    padding: 14px 40px;
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+}
 .club-content-btn a{
     font-size: 14px;
     font-weight: 700;
     color: #a98e67;
-    border: 2px solid #a98e67;
-    padding: 14px 40px;
-    cursor: pointer;
+    text-align: center;
 }
 .club-content-btn span{
-    font-size: 16px;
+    font-size: 14px;
     color: #a98e67;
     margin-left: 45px;
+    position: relative;
+    top: 20px;
     cursor: pointer;
 }
-@media (max-width: 1440px) {
-    #club{
+@media (max-width: 767px) {
+    #club .container{
         width: 100%;
     }
-    #club .container{
-        width: 81.25%;
-        margin-right: 8.33%;
-        margin-left: 8.33%;
+    .club-mask {
+        width: 100%;
+        height: 160px;
+        text-align: center;
     }
-    .club-mask{
-        margin-left: 10.4%;
+    .club-mask p{
+        font-size: 16px;
+    }
+    .club-mask-small{
+        left:0;
+        top:50px;
+        width: 100%;
+    }
+    .club-content{
+        padding: 0 5%;
+        width: 72.35%;
+        margin-top: 0;
+        margin-right: 8.825%;
+        margin-left: 8.825%;
+        text-align: center;
+    }
+    .club-content-text{
+        font-size: 18px;
+        margin: 10px  0 35px 0;
+
+    }
+    .club-content-btn{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .club-content-btn div{
+        margin: 5px 0;
+        width: 99.09%;
+        padding: 14px 0 ;
+        border: 2px solid #a98e67;
+    }
+    .club-content-btn span{
+        /*background: #E44072;*/
+        padding-top: 10px;
+       float: right;
     }
 
 }
 
 
+/*#app{*/
+    /*background:url(../img/app_bg.gif) repeat scroll center;*/
+/*}*/
+/*#app .container{*/
+    /*position: relative;*/
+/*}*/
+/*.app-phone img{*/
+    /*margin-left: 100px;*/
+    /*margin-top: 20px;*/
+    /*height: 200px;*/
+/*}*/
+/*.app-download{*/
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*left: 450px;*/
 
-#app{
-    background:url(../img/app_bg.gif) repeat scroll center;
-}
-#app .container{
-    position: relative;
-}
-.app-phone img{
-    margin-left: 100px;
-    margin-top: 20px;
-    height: 200px;
-}
-.app-download{
-    position: absolute;
-    top: 10px;
-    left: 450px;
+/*}*/
+/*.code img{*/
+    /*width:130px;*/
+/*}*/
 
-}
-.code img{
-    width:130px;
-}
+/*.android {*/
+    /*width: 100px;*/
+    /*height: 36px;*/
+    /*position: absolute;*/
+    /*bottom: -60px;*/
+    /*right: -120px;*/
+/*}*/
+/*.android a{*/
+    /*height: 36px;*/
+    /*line-height: 36px;*/
+    /*margin-top: 10px;*/
+    /*font-size: 20px;*/
+    /*color: #999999;*/
+/*}*/
+/*.android p{*/
+    /*font-size: 13px;*/
+    /*width: 70px;*/
+    /*float: right;*/
+    /*margin-right: 8px;*/
+    /*padding-left: 5px;*/
+    /*border-left: 1px solid #000000;*/
 
-.android {
-    width: 100px;
-    height: 36px;
-    position: absolute;
-    bottom: -60px;
-    right: -120px;
-}
-.android a{
-    height: 36px;
-    line-height: 36px;
-    margin-top: 10px;
-    font-size: 20px;
-    color: #999999;
-}
-.android p{
-    font-size: 13px;
-    width: 70px;
-    float: right;
-    margin-right: 8px;
-    padding-left: 5px;
-    border-left: 1px solid #000000;
+/*}*/
+/*.app-content{*/
+     /*position: absolute;*/
+     /*top: 30%;*/
+     /*right: 20px;*/
 
-}
-.app-content{
-     position: absolute;
-     top: 30%;
-     right: 20px;
+ /*}*/
+/*.app-content-text{*/
+    /*width: 450px;*/
+    /*font-size: 24px;*/
+    /*color: #3d3d3d;*/
+    /*margin-bottom: 5px;*/
+/*}*/
+/*.app-content span{*/
+    /*font-size: 14px;*/
+    /*color: #b89f7a;*/
+/*}*/
 
- }
-.app-content-text{
-    width: 450px;
-    font-size: 24px;
-    color: #3d3d3d;
-    margin-bottom: 5px;
-}
-.app-content span{
-    font-size: 14px;
-    color: #b89f7a;
-}
-#banner img{
+
+
+
+#banner .img1{
     width: 100%;
     display: block;
 }
+#banner .img2{
+    display: none;
+}
+@media (max-width: 767px) {
+    #banner .img1{
+        display: none;
+    }
+    #banner .img2{
+        display: block;
+    }
+    
+}
+@media (max-width: 640px) {
+    #banner .img2{
+        width: 100%;
+    }
+
+}
 #mosaic{
-    position: relative;
     width: 100%;
-    height: 713px;
+    overflow: hidden;
 }
 .mosaic-cat{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position:relative;
+    width: 50%;
+    float: left;
 }
 .mosaic-cat img{
-    width:720px;
-    height: 713px;
+    width:100%;
+    display: block;
 }
 .mosaic-coffee{
-    position: absolute;
-    top:0;
-    right: 0;
+    position: relative;
+    width: 50%;
+    float: right;
 }
 .mosaic-coffee img{
-    width:720px;
-    height:713px;
+    width: 100%;
+    display: block;
 }
 #mosaic h2{
+    width: 100%;
     font-size: 30px;
     color: #FFFFFF;
     text-align: center;
-    position: relative;
-    bottom: 90px;
+    position: absolute;
+    bottom: 35px;
 
 }
 #mosaic h3{
+    width: 100%;
     font-size: 13px;
     color: #a98e67;
     text-align: center;
-    position: relative;
-    bottom: 90px;
+    position: absolute;
+    bottom: 17px;
 }
+@media (max-width: 767px) {
+    .mosaic-cat{
+        width: 100%;
+    }
+    .mosaic-cat img{
+        width: 100%;
+        display: block;
+    }
+    .mosaic-coffee{
+        width: 100%;
+    }
+    .mosaic-coffee img{
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
 #wsg{
     width: 100%;
-    height: 222px;
     background: #106e4b;
+    overflow: hidden;
 }
 #wsg .container{
-    position: relative;
+    width: 762px;
 }
 .wsg-left{
-    width: 390px;
-    height: 200px;
-    position: absolute;
-    top: 10px;
-    left:175px;
+    height: 222px;
+    float: left;
 
 }
 .wsg-right{
-    width: 390px;
-    height: 200px;
-    position: absolute;
-    top: 10px;
-    right:175px;
+    height: 222px;
+    float: right;
 }
 .wsg-left-title{
     width: 175px;
     height: 90px;
     float: left;
-    margin-top: 55px;
-    margin-left: 40px;
+    margin: 65px 25px 0 25px;
     background: url("../img/wsg-title.png") no-repeat;
     background-size: contain;
 }
 .wsg-left-code{
     width: 106px;
     height: 106px;
-    margin-top: 38px;
-    margin-left: 25px;
+    margin: 55px 25px 0 25px;
     float: right;
     background: url("../img/wsg-qrcode的副本.png") no-repeat;
     background-size: contain;
@@ -378,7 +462,7 @@
 .wsg-right-cup{
     width: 106px;
     height: 106px;
-    margin-top: 38px;
+    margin: 55px 25px 0 25px;
     float: left;
     background: url("../img/wsg-cup.png")no-repeat;
     background-size: contain;
@@ -387,30 +471,100 @@
     width: 175px;
     height: 90px;
     float: right;
-    margin-top: 55px;
-    margin-right: 60px;
+    margin: 65px 25px 0 25px;
     background: url("../img/wsg-wording.png") no-repeat;
     background-size: contain;
 }
+
+
+@media (max-width: 767px) {
+    #wsg{
+        width: 100%;
+    }
+    #wsg .container{
+        width: 270px;
+        padding: 0 20px;
+        overflow: hidden;
+        position: relative;
+    }
+    #wsg .wsg-left{
+        padding-top: 30px ;
+        float: none;
+        height: 180px;
+
+    }
+    #wsg .wsg-left-title{
+        width: 150px;
+        height: 162px;
+        background: url("../img/wsg-cup.png")no-repeat;
+        background-size: contain;
+        margin: 0;
+        float: left;
+        position: absolute;
+        left: 0;
+
+
+    }
+    #wsg .wsg-left-code{
+        width: 150px;
+        background:url("../img/wsg-title.png") no-repeat;
+        background-size: contain;
+        margin: 45px 20px 0 20px;
+        float: left;
+        position: absolute;
+        left: 130px;
+    }
+    #wsg .wsg-right{
+             float: none;
+             height: 150px;
+         }
+
+    #wsg .wsg-right-cup{
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        background:url("../img/wsg-qrcode的副本.png") no-repeat;
+        background-size: contain;
+        float: left;
+        position: absolute;
+        left: 10px;
+    }
+    #wsg .wsg-right-title{
+        width: 180px;
+        background: url("../img/wsg-wording.png") no-repeat;
+        background-size: contain;
+        margin: 20px 10px;
+        float: left;
+        position: absolute;
+        left: 130px;
+
+    }
+
+}
+
+
+
 #watch{
     background: url("../img/web-bg.png") repeat-x;
+    overflow: hidden;
 }
+#watch .container{
+    width: 1038px;
+ }
 #watch .watch-img{
     width: 408px;
     height: 220px;
-    margin-left: 70px;
     background: url("../img/web-iwatch-cn.png") center no-repeat;
     background-size: cover;
+    float: left;
 }
-#watch .container{
-    position: relative;
-}
+
 .watch-title{
-    width: 480px;
     line-height: 1.8;
-    position:absolute ;
-    top:30px;
-    left: 560px;
+    margin-left: 70px;
+    margin-top: 50px;
+    float: left;
+
 }
 .watch-title p{
     width: 344px;
@@ -422,9 +576,8 @@
     color: #b89f7a;
 }
 .watch-code {
-    position: absolute;
-    right: 70px;
-    top: 30px;
+    margin-top: 50px;
+   float: right;
 }
 .watch-code img{
     width: 130px;
@@ -437,10 +590,63 @@
     margin-left: 18px;
 
 }
+
+
+@media (max-width: 1066px) {
+    #watch {
+        width: 100%;
+    }
+    #watch .container{
+        width: 100%;
+    }
+    #watch .watch-img{
+
+        width: 414px;
+        height: 338px;
+        background:url("../img/mobile-iwatch-cn.png");
+        background-size: contain;
+        margin: 0 auto;
+        float: none;
+    }
+    #watch .watch-title {
+        width: 100%;
+        margin: 0 6% 50px 6%;
+        float: none;
+        position: relative;
+    }
+    #watch .watch-title p{
+        width: 88%;
+    }
+    .watch-title span{
+        font-size: 14px;
+        color: #b89f7a;
+        position: absolute;
+        bottom: -40px;
+        right: 70px;
+        
+    }
+
+    #watch .watch-code {
+        width: 188px;
+        height: 75px;
+        margin: 0 auto;
+        background: url("../img/udp-starbucks-cn.svg") no-repeat;
+        background-size: contain;
+        float: none;
+    }
+    #watch .watch-code img{
+        display: none;
+    }
+    #watch .watch-code span{
+        display: none;
+    }
+}
+
 #collection{
     background: #f5f5f5;
     padding: 100px 16px;
 }
+
 #collection h1{
     text-align: center;
 }
@@ -449,10 +655,10 @@
     margin: 20px 0 80px 0;
     text-align: center;
 }
-.collection-img{
-    height: 280px;
-    margin:  0 20px;
-    position: relative;
+.collection-img {
+    width: 1088px;
+    height: 300px;
+    margin: 0 auto;
 }
 #collection img{
     width: 240px;
@@ -467,50 +673,288 @@
     width: 240px;
     height: 280px;
     border: 1px solid #CCCCCC;
-    margin: 0 15px 15px 15px;
+    margin: 15px;
+    float: left;
 
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .collection-img2{
     width: 240px;
     height: 280px;
-    margin: 0 15px 15px 15px;
+    margin: 15px ;
     border: 1px solid #CCCCCC;
-    position: absolute;
-    top:0;
-    left: 270px;
-
+    float: left;
 
 }
 .collection-img3{
     width: 240px;
     height: 280px;
-    margin: 0 15px 15px 15px;
+    margin: 15px;
     border: 1px solid #CCCCCC;
-    position: absolute;
-    top:0;
-    left: 540px;
-
+    float: right;
 }
 .collection-img4{
     width: 240px;
     height: 280px;
-    margin: 0 15px 15px 15px;
+    margin: 15px;
     border: 1px solid #CCCCCC;
-    position: absolute;
-    top:0;
-    left: 810px;
+    float: right;
+
+
 }
 .collection-img p{
     width:240px;
     font-size: 15px;
     text-align: center;
 }
+.collection-img span{
+    display: none;
+}
+
+@media (max-width: 1111px) {
+
+
+    #collection .collection-img {
+        width: 816px;
+        height: 620px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #collection .collection-img1{
+        width: 240px;
+        height: 280px;
+        border: 1px solid #CCCCCC;
+        margin: 15px;
+        float: left;
+        overflow: hidden;
+
+    }
+    #collection .collection-img2{
+        width: 240px;
+        height: 280px;
+        margin: 15px ;
+        border: 1px solid #CCCCCC;
+        float: left;
+
+    }
+    #collection .collection-img3{
+        width: 240px;
+        height: 280px;
+        margin: 15px;
+        border: 1px solid #CCCCCC;
+        float: right;
+    }
+    #collection .collection-img4{
+        width: 240px;
+        height: 280px;
+        margin: 15px;
+        border: 1px solid #CCCCCC;
+        float: left;
+        position: relative;
+        left: 272px;
+
+    }
+
+
+}
+@media (max-width: 846px) {
+
+    #collection .collection-img {
+        width: 544px;
+        height: 620px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #collection .collection-img1{
+        width: 240px;
+        height: 280px;
+        border: 1px solid #CCCCCC;
+        margin: 15px;
+        float: left;
+
+    }
+    #collection .collection-img2{
+        width: 240px;
+        height: 280px;
+        margin: 15px ;
+        border: 1px solid #CCCCCC;
+        float: left;
+
+    }
+    #collection .collection-img3{
+        width: 240px;
+        height: 280px;
+        margin: 15px;
+        border: 1px solid #CCCCCC;
+        float: left;
+    }
+    #collection .collection-img4{
+        width: 240px;
+        height: 280px;
+        margin: 15px;
+        border: 1px solid #CCCCCC;
+        left: 0;
+        float: left;
+    }
+    
+}
+@media (max-width: 667px) {
+    #collection{
+        background: #f5f5f5;
+        padding: 80px 16px;
+    }
+
+    #collection .collection-img {
+        width: 632px;
+        height: 240px;
+        margin: 0 auto;
+    }
+    #collection img{
+        width: 136px;
+        height: 86px;
+    }
+    #collection h2{
+        width: 110px;
+        padding: 0 13px;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+    }
+    #collection .collection-img1{
+        width: 136px;
+        height: 220px;
+        border: 1px solid #CCCCCC;
+        margin: 10px;
+        float: left;
+
+    }
+    #collection .collection-img2{
+        width: 136px;
+        height: 220px;
+        margin: 10px ;
+        border: 1px solid #CCCCCC;
+        float: left;
+
+    }
+    #collection .collection-img3{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #CCCCCC;
+        float: right;
+    }
+    #collection .collection-img4{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #CCCCCC;
+        float: right;
+
+
+    }
+    .collection-img p{
+        width:110px;
+        padding: 0 13px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+
+
+}
+@media (max-width: 655px) {
+    #collection .collection-img {
+        width: 474px;
+        height: 480px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #collection .collection-img1{
+        width: 136px;
+        height: 220px;
+        border: 1px solid #CCCCCC;
+        margin: 10px;
+        float: left;
+        overflow: hidden;
+
+    }
+    #collection .collection-img2{
+        width: 136px;
+        height: 220px;
+        margin: 10px ;
+        border: 1px solid #CCCCCC;
+        float: left;
+
+    }
+    #collection .collection-img3{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #CCCCCC;
+        float: right;
+    }
+    #collection .collection-img4{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #CCCCCC;
+        float: left;
+        position: relative;
+        left: 158px;
+
+    }
+}
+@media (max-width: 499px) {
+    #collection .collection-img {
+        width: 320px;
+        height: 480px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #collection .collection-img1{
+        width: 136px;
+        height: 220px;
+        border: 1px solid #CCCCCC;
+        margin: 10px;
+        float: left;
+
+    }
+    #collection .collection-img2{
+        width: 136px;
+        height: 220px;
+        margin: 10px ;
+        border: 1px solid #CCCCCC;
+        float: left;
+
+    }
+    #collection .collection-img3{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #CCCCCC;
+        float: left;
+    }
+    #collection .collection-img4{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #CCCCCC;
+        left: 0;
+        float: left;
+    }
+
+}
+
+
+
+
+
 #black{
     height: 608px;
     background: #060608;
+}
+#black .container{
+    width: 1140px;
+
 }
 .black-img{
     float: left;
@@ -540,6 +984,90 @@
     border: 2px solid #b89f7a;
     padding: 14px 40px;
 }
+
+@media (max-width: 1199px) {
+    #black{
+        width: 100%;
+    }
+    #black .container{
+        width: 970px;
+    }
+    
+}
+@media (max-width: 986px) {
+    #black {
+        width: 100%;
+    }
+
+    #black .container {
+        width: 720px;
+    }
+
+    .black-cell {
+        margin: 70px 0 ;
+        width: 240px;
+        float: right;
+        text-align: center;
+    }
+
+    .black-cell-btn {
+        margin-top: 40px;
+
+    }
+
+    .black-cell-btn a {
+        color: #b89f7a;
+        display: inline-block;
+        border: 2px solid #b89f7a;
+        margin: 0 0 20px 0;
+        padding: 14px 40px;
+    }
+
+}
+@media (max-width: 766px) {
+    #black {
+        width: 100%;
+        height: 1000px;
+    }
+
+    #black .container {
+        width: 91.38%;
+        margin: 0 auto;
+    }
+
+    .black-cell {
+        margin: 40px 0 ;
+        width: 100%;
+        float: right;
+        text-align: center;
+    }
+    .black-cell h3{
+        width:100%;
+        font-size: 24px;
+        letter-spacing: 3px;
+        margin: 15px 0;
+        color: #b89f7a;
+    }
+
+    .black-cell-btn {
+        width: 100%;
+        margin-top: 40px;
+
+    }
+
+    .black-cell-btn a {
+        width: 78%;
+        color: #b89f7a;
+        display: inline-block;
+        border: 2px solid #b89f7a;
+        margin: 0 0 20px 0;
+        padding: 14px 40px;
+    }
+
+}
+    
+
+
 #menu{
     height: 800px;
     padding: 60px 0;
