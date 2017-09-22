@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000000;
+        }
+        #heart{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin: 300px 400px;
+            transform: rotateZ(45deg);
+            animation:scale 0.5s linear infinite;
+        }
+        .topleft{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ff0000;
+            box-shadow: 0 0 50px rgba(255,0,0,.8);
+            position: absolute;
+            margin-left: 100px;
+            transform: rotate(180deg);
+        }
+        .topright{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ff0000;
+            box-shadow: 0 0 50px rgba(255,0,0,.8);
+            position: absolute;
+            margin-top: 100px;
+            transform: rotate(-180deg);
+
+        }
+        .bottom{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+            box-shadow: 0 0 50px rgba(255,0,0,8);
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+        }
+        @keyframes scale {
+            from{
+                /*transform: rotateZ(45deg);*/
+            }
+            to{
+
+                transform:rotate(45deg) scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="heart">
+    <div class="topleft"></div>
+    <div class="topright"></div>
+    <div class="bottom"></div>
+</div>
+</body>
+</html>
