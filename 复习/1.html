@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #content{
+        width: 350px;
+    }
+    li{
+       list-style: none;
+    }
+    #content .ul1 li {
+        width: 60px;
+        height: 20px;
+        padding: 10px;
+        background-color: #37A7D7;
+        margin:10px ;
+        float: left;
+
+    }
+    #content1{
+        margin: 10px;
+        width:350px ;
+        position: absolute;
+        top: -10px;
+        left: 7px;
+    }
+    #content1 .ul2 li {
+        width: 60px;
+        height: 20px;
+        padding: 10px;
+        border-right: 1px solid #000000;
+        margin:10px ;
+        float: left;
+
+    }
+    #content1 li:nth-child(3n){
+        border-right: none;
+    }
+    #content1 li:last-child{
+        border-right: none;
+    }
+
+</style>
+<body>
+    <div id="content">
+        <ul class="ul1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+    </div>
+    <div id="content1">
+        <ul class="ul2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+
+    </div>
+</body>
+</html>
