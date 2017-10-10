@@ -1,4 +1,4 @@
-#home{
+#content{
     width: 100%;
     height: 100%;
 }
@@ -14,6 +14,25 @@
     width: 100%;
     height: 1000px;
     background: #000;
-    opacity: 0.4;
-    color: #ffffff;
+    /*opacity: 0.4;*/
+}
+#header{
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+}
+#nav{
+    float: right;
+    height: 40px;
+    padding: 20px 0;
+}
+#nav li{
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+    margin: 0 30px;
+    float: left;
+}
+#nav a {
+    color: #000000;
 }
