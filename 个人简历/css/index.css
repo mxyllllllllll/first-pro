@@ -7,6 +7,7 @@
     z-index: 6;
     position: fixed;
     top: 0;
+    /*display: none;*/
 }
 .header-img1 img{
     margin-left: 30px;
@@ -20,51 +21,175 @@
     float: right;
     cursor: pointer;
 }
-#content img{
+#home {
     width: 100%;
-    position: absolute;
-    top: 0;
+    background: url("../img/timg.jpg") no-repeat;
+    background-size: cover;
+
 }
 .nav{
-    width: 340px;
-    height: 280px;
-    border: 2px solid #FFFFFF;
-    opacity: 0.96;
     position: absolute;
-}
-.container{
-    margin: 0 auto;
-}
-#content .container{
-    width: 340px;
-    margin-top: 200px;
-}
-.border{
-    width: 300px;
-    height: 250px;
-    background: #FFFFFF;
-    opacity: 0.96;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-}
-.border h1{
-    width: 300px;
     text-align: center;
-    position: absolute;
-    top: 25%;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    /*height: 250px;*/
+    padding: 65px 0;
+    background: rgba(255, 255, 255, 0.6);
+    outline: 4px double #FFFFFF;
+    outline-offset: 8px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
+.nav h1{
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab';
+    /*font-style: normal;*/
+    font-weight: 300;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/y7lebkjgREBJK96VQi37ZvZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+.typed{
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #6E6E6E;
+    display: block;
+    height: 26px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v16/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+.mouse{
+    width: 30px;
+    height: 40px;
+    border: 2px solid #0f0f0f;
+    background: #FFFFFF;
+    border-radius: 13px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    opacity: 0.4;
+
+
+}
+.mouse-small{
+    width: 4px;
+    height: 5px;
+    background: #0f0f0f;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+
+    /*border-radius: 2px;*/
+}
+
 @media (max-width: 1200px) {
-    #content img{
-       display: none;
-    }
-    #content{
+    #home{
         width: 100%;
-        height: 675px;
+        /*height: 100%;*/
         background: url("../img/timg.jpg") no-repeat;
         background-size: cover;
-        position: absolute;
-        top: 0;
+        /*position: absolute;*/
+        /*top: 0;*/
     }
 }
+@media (max-width: 400px) {
+    #home .nav{
+        width: 280px;
+        padding:40px 0;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+
+    }
+
+}
+#about{
+    height: 650px;
+
+}
+.about-img{
+    width: 50%;
+    height: 650px;
+    background: url("../img/reza.jpg") no-repeat;
+    background-size: cover;
+    float: left;
+
+}
+.about-title{
+    width: 50%;
+    height: 650px;
+    float: right;
+    background: #FFFFFF;
+    position: relative;
+}
+#content div{
+    display: none;
+}
+#content .selected{
+    display: block;
+}
+.about-title p{
+
+    margin: 200px auto;
+    width: 50%;
+    font-size: 13px;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    font-weight: 300
+}
+#card ul{
+   position: absolute;
+    left: 47%;
+    bottom: 60px;
+}
+#card li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #CCCCCC ;
+    float: left;
+    margin:0 8px ;
+    cursor: pointer;
+
+}
+#card .selected{
+    background: #000;
+}
+#card li:hover{
+    background: #000;
+
+}
+.about-title-form{
+    margin:200px auto;
+}
+.about-title-form td{
+    font-size: 13px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #6E6E6E;
+
+}
+.about-title-form .title{
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 600
+}
+
 
