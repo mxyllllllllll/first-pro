@@ -191,5 +191,33 @@
     letter-spacing: 1px;
     font-weight: 600
 }
+.wrap{
+    margin: 0 auto;
+}
+.work-concent{
+    padding: 100px 0;
+    overflow: hidden;
+    background: #f6f6f6;
+}
+#work .wrap{
+    width: 1170px;
+}
+.work-title{
+    width: 270px;
+    float: left;
+}
+.work-block{
+    width: 800px;
+    float: right;
+}
+.work-img{
+    float: left;
+    width: 390px;
+    height: 360px;
+}
+.work-block img{
+    padding: 15px 20px;
+    width: 350px;
+    height: 330px;
 
-
+}
