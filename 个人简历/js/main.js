@@ -11,7 +11,7 @@ $(".typed").typed({
 });
 //主页面
 //
-$(document).ready(function(){
+$(window).ready(function(){
     $("#home").height($(window).height());
 //     // $("#home").width($(window).width());
 });
