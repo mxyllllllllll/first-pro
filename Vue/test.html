@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+   .red{
+       background: red;
+   }
+    .font{
+        font-size: 40px;
+    }
+    .div1{
+        width: 300px;
+        height: 200px;
+        background: #3388cc;
+        display: block;
+    }
+</style>
+<body>
+<div id="app">
+    <!--<button @click="fn(1,2)">click</button>//v-on绑定方法-->
+    <!--&lt;!&ndash;{{msg}}&ndash;&gt;-->
+    <!--<input type="text" v-model="msg">-->
+    <!--<span v-text="msg"></span>-->
+    <!--<span v-html="msg"></span>-->
+    <!--<p :id="p" :text = "pp">pppppp</p>   &lt;!&ndash;v-bind动态绑定属性&ndash;&gt;-->
+
+    <!--class style-->
+    <p class = 'aa' :class = "[classA,classB]">ppppp</p>
+    <button @click="fn">on</button>
+    <div class="div1"></div>
+
+</div>
+<script src="vue.js"></script>
+<script>
+
+    new Vue({
+        el:'#app',
+        data:{
+//            msg: '<h1>hhhhh<h1>',
+            p:'pp1',
+            pp:'sssss',
+            classA:'red',
+            classB:'font'
+
+        },
+
+//        methods:{
+//            fn(){
+//                this.
+//
+//            }
+//        }
+    });
+
+
+//    function V(obj) {
+//        for(var p in obj ){
+//            if(p == 'el'){
+//                this['$'+p] = document.querySelector(obj[p]);
+//            }else if(p == 'data'){
+//                this['$'+p] = obj[p];
+//                for (var q in obj[p]){
+//                    this[q]=obj[p][q];
+//                }
+//
+//            }
+//        }
+//
+//    }
+//
+//    var v = new V({
+//        el:'#app',
+//        data:{
+//            msg : 'aaaa'
+//        }
+//    })
+</script>
+</body>
+</html>

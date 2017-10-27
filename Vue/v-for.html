@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <!--<li v-for="(val,index) in arr">-->
+            <!--{{val}},{{index+1}}-->
+            <!--<a href="">{{val}}</a>-->
+        <!--</li>-->
+
+
+
+        <li v-for = "n in 10">
+            {{n}}
+        </li>
+        <!--<template v-for ="n in 3">-->
+            <!--<p>ppp</p>-->
+            <!--<h1>hhhh</h1>-->
+            <!--<span>sssss</span>-->
+        <!--</template>-->
+    </ul>
+</div>
+<script src="vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            arr:[1,2,3]
+        }
+    })
+</script>
+
+</body>
+</html>

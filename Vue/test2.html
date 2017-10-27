@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            width: 200px;
+            height: 200px;
+            /*background: red;*/
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <button @click="fn">on</button>
+    <div class="red":style="{background:bgColor}"></div>
+</div>
+</body>
+<script src="vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+//            isRed:true,
+            bgColor:'red'
+        },
+        methods:{
+            fn(){
+//                this.isRed = !this.isRed;
+                if(this.bgColor == 'red'){
+                    this.bgColor = '';
+                }else{
+                    this.bgColor = 'red';
+                }
+            }
+        }
+    })
+</script>
+</html>

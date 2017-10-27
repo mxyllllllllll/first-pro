@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div id="app">
+    <!--<p :style = "styleObj">aaaa</p>-->
+    <!--<p :style="{background:bgColor,fontSize:fs}">aaaa</p>-->
+    <p :style="[styleA,styleB]">pppp</p>
+</div>
+<body>
+<script src="vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            bgColor:'red',
+            fs:'40px',
+            styleObj:{
+                background:'red',
+                'font-size':'40px'
+            },
+            styleA:{
+                background:'red'
+            },
+            styleB:{
+                'font-size':'40px'
+            }
+        }
+    })
+</script>
+</body>
+</html>
