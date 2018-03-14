@@ -205,19 +205,32 @@
 }
 #work .wrap{
     width: 1170px;
+    text-align: center;
 }
 .work-title{
-    width: 270px;
+    margin: 30px 0;
+    display: inline-block;
+    overflow: auto;
+}
+.work-title li{
+   padding: 10px 10px;
+    margin: 10px;
+    background: #f6f6f6;
+    border-radius: 25%;
     float: left;
+    display: inline;
+    cursor: pointer;
+}
+.work-title .selected{
+    background: #6D84B4;
 }
 .work-block{
-    width: 800px;
-    float: right;
+    float: left;
 }
 .work-img{
     float: left;
-    width: 390px;
-    height: 360px;
+    /*width: 390px;*/
+    /*height: 360px;*/
 }
 .work-block img{
     padding: 15px 20px;
@@ -225,10 +238,69 @@
     height: 330px;
 
 }
+@media (max-width: 1169px) {
+    #work .wrap{
+        width: 990px;
+    }
+    #work .work-img img{
+        padding: 10px 15px;
+        width: 300px;
+        height:280px;
+
+    }
+}
+@media (max-width: 965px) {
+
+    #work .wrap{
+        width: 780px;
+    }
+    #work .work-img img{
+        padding: 15px 20px;
+        width: 350px;
+        height: 330px;
+    }
+    
+}
+
+@media (max-width: 780px) {
+
+    #about{
+        height: 1300px;
+        /*overflow: hidden;*/
+    }
+    #about .about-img{
+        width: 100%;
+        height: 650px;
+        background: url("../img/reza.jpg") no-repeat;
+        background-size: cover;
+        float: left;
+
+    }
+    #about .about-title{
+        width: 100%;
+        height: 650px;
+        float: left;
+        background: #FFFFFF;
+        position: relative;
+    }
+    #work .wrap{
+        width: 80%;
+    }
+    #work .work-img img{
+        width: 80%;
+        height: 80%;
+    }
+
+
+}
+
+
 #photo .bg-img{
     width: 100%;
     height: 350px;
-    background: #cccccc;
+    background-image: url("../img/bgcolor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 .bg-content{
@@ -239,6 +311,7 @@
     margin: auto;
     padding: 100px;
     font-size: 19px;
+    color: #cdcdcd;
     display: none;
 }
 #photo ul{
@@ -259,8 +332,71 @@
 #photo .selected{
     display: block;
 }
+#photo ul .selected{
+    background: #000;
+}
 
 #photo li:hover{
     background: #000;
 
 }
+#item{
+    width: 100%;
+    padding: 100px 0;
+    background: #f6f6f6;
+    text-align: center;
+}
+#tabs{
+    margin: 30px 0;
+    display: inline-block;
+    overflow: auto;
+}
+#tabs li{
+    padding: 70px;
+    margin: 50px;
+    background:#6D84B4 ;
+    border-radius: 40%;
+    float: left;
+    font-size: 20px;
+    display: inline;
+    cursor: pointer;
+}
+#fellow{
+    padding: 100px 0;
+    color: #ffffff;
+    background: #6ed3cf;
+}
+
+#fellow .form-text{
+    opacity: 0.9;
+    color: #0493bd;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    border: 3px solid #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin: 15px;
+    width: 40%;
+}
+#fellow textarea{
+    height: 100px;
+}
+#fellow .button{
+    font-family: 'Lato',sans-serif;
+    width: 46%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
