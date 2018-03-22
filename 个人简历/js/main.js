@@ -118,5 +118,32 @@ for(i=0; i < aUl1.length; i++){
 
 }
 
+var oButton = document.getElementById("button");
+oButton.onmouseover = function(){
+    // oButton.style.width = "0";
+    // oButton.style.height = "0";
+    oButton.style.background = "#ffffff";
+    oButton.style.color = "#3498db";
+
+};
+oButton.onmouseout = function(){
+    // oButton.style.width = "0";
+    // oButton.style.height = "0";
+    oButton.style.background = "#3498db";
+    oButton.style.color = "#ffffff";
+
+};
+
+var oTabs = document.getElementById('tabs');
+var aSpan = oTabs.getElementsByTagName('span');
+
+for(i=0; i < aSpan.length; i++){
+    aSpan[i].onmouseover = function () {
+        this.className = "animated bounceInRight";
+    };
+    aSpan[i].onmouseout = function () {
+        this.className = ""
+    };
+}
 
 

@@ -8,6 +8,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="layui-v2.2.5/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/animate.css">
+
 
 </head>
 <body style="height: 100%">
@@ -146,8 +149,8 @@
         </div>
     </div>
     <div id="photo">
-        <div class="bg-img">
-            <div class="bg-content">
+        <div id="bg-img">
+            <div id="bg-content">
                 <p class="selected">
                 “Some of us get dipped in flat, some in satin, some in gloss....<br>
                 But every once in a while you find someone who's iridescent,<br>
@@ -156,28 +159,35 @@
                 <p>
                     “Some of us get dipped in flat, some in satin, some in gloss....<br>
                     But every once in a while you find someone who's iridescent,<br>
-                    and when you do, nothing will ever compare"<br>
+
                 </p>
                 <p>
                     “Some of us get dipped in flat, some in satin, some in gloss....<br>
-                    But every once in a while you find someone who's iridescent,<br>
-                    and when you do, nothing will ever compare"<br>
+
                 </p>
-                <ul>
+            </div>
+                <ul id="photo-li">
                     <li class="selected"></li>
                     <li></li>
                     <li></li>
                 </ul>
-            </div>
         </div>
     </div>
     <div id="item">
         <h1 align="center">Project</h1>
         <ul id="tabs">
-            <li class="selected">全部</li>
-            <li>仿站</li>
-            <li>动画</li>
-            <li>实战</li>
+            <li class="selected"><i class="fa fa-television" aria-hidden="true" style="font-size: 80px;"></i>
+            <span>所有</span>
+            </li>
+            <li><i class="fa fa-edge" aria-hidden="true" style="font-size: 80px;"></i>
+            <span>仿站</span>
+            </li>
+            <li><i class="fa fa-life-ring" aria-hidden="true" style="font-size: 80px;"></i>
+            <span>动画</span>
+            </li>
+            <li><i class="fa fa-tablet" aria-hidden="true" style="font-size: 100px;"></i>
+            <span>实战</span>
+            </li>
         </ul>
 
     </div>
@@ -185,10 +195,14 @@
         <h1 align="center" style="padding: 40px"> Contact Me</h1>
         <div class="form" style="width:100%;text-align:center">
         <form action="">
-            <input class="form-text" name="name" type="text" placeholder="Name" ><br>
-            <input class="form-text" name="email" type="text" placeholder="Email"><br>
-            <textarea class="form-text" name="message" placeholder="Message"></textarea><br>
-            <input class="button" type="submit" value="SEND">
+            <input class="form-text" name="name" type="text" placeholder="Name" style="background-image: url('img/name.png');background-repeat: no-repeat;background-size:45px 45px;"><br>
+            <input class="form-text" name="email" type="text" placeholder="Email" style="background-image: url('img/email.png');
+            background-repeat: no-repeat;
+            background-size:45px 45px ;"><br>
+            <textarea class="form-text" name="message" placeholder="Message" style="    background-image: url('img/message.png');
+            background-repeat: no-repeat;
+            background-size: 45px 45px;"></textarea><br>
+            <input id="button" type="submit" value="SEND">
         </form>
         </div>
     </div>
@@ -214,7 +228,11 @@
     </div>
 </div>
 </body>
+
+
+<script src="layui-v2.2.5/layui/layui.js"></script>
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
+<script src="js/photo.js"></script>
 </html>
