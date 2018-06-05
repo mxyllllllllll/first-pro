@@ -2,13 +2,21 @@
  * Created by a123 on 2017/10/15.
  */
 
+window.onresize = function(){
+    // var w=window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var h=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    // document.getElementById("home").style.width = w+"px";
+    document.getElementById("home").style.height = h+"px";
+}
+
+
 //about选项卡
+//     console.log(this)
 var oContent = document.getElementById('content');
 var oCard = document.getElementById('card');
-var aDiv = oContent.getElementsByTagName('div');
+var aDiv = oContent.getElementsByTagName('li');
 var aLi = oCard.getElementsByTagName('li');
 for(i=0; i < aDiv.length; i++){
-
     aLi[i].index = i;
     aLi[i].onclick = function () {
         for(var i=0; i<aLi.length; i++){
@@ -100,23 +108,34 @@ $(".contact").on("click",function () {
 
 
 //work选项卡
-var oBlock = document.getElementById('work-blocks');
+
 var oTitle = document.getElementById('work-title');
-var aUl1 =oBlock .getElementsByTagName('ul');
 var aLi1 = oTitle.getElementsByTagName('li');
-for(i=0; i < aUl1.length; i++){
-    aLi1[i].index = i;
+for(i=0; i < aLi1.length; i++){
     aLi1[i].onclick = function () {
         for(var i=0; i<aLi1.length; i++){
-            aUl1[i].className = '';
+            // aUl1[i].className = '';
             aLi1[i].className = '';
         }
         this.className = 'selected';
-        aUl1[this.index].className= 'selected';
+        // aUl1[this.index].className= 'selected';
 
     }
 
 }
+
+$tab = $("#work-title li");
+$tab.eq(0).on("click",function () {
+    $("#work-blocks img").stop().show();
+});
+$tab.eq(1).on("click",function () {
+    $(".first").stop().show();
+    $(".second").stop().hide();
+});
+$tab.eq(2).on("click",function () {
+    $(".second").stop().show();
+    $(".first").stop().hide();
+});
 
 var oButton = document.getElementById("button");
 oButton.onmouseover = function(){
@@ -136,14 +155,51 @@ oButton.onmouseout = function(){
 
 var oTabs = document.getElementById('tabs');
 var aSpan = oTabs.getElementsByTagName('span');
+var aLI = oTabs.getElementsByTagName('li');
+var oItemPhoto=document.getElementById('item-photo');
+var aDivd = oItemPhoto.getElementsByTagName('div');
+var oItemTitle = document.getElementById('item-title');
+var oI = document.getElementById('i');
 
-for(i=0; i < aSpan.length; i++){
-    aSpan[i].onmouseover = function () {
-        this.className = "animated bounceInRight";
+for( let i=0; i < aSpan.length; i++){
+    aSpan[i].onmouseover = function (ev) {
+        this.style.background = "#cccccc";
+        this.style.transition ="all 0.3s linear";
+        this.style.color ="#ffffff"
+
+
     };
-    aSpan[i].onmouseout = function () {
-        this.className = ""
+    aSpan[i].onmouseout = function (ev) {
+
+        this.style.background = "#ffffff";
+        this.style.transition ="all 0.3s linear";
+        this.style.color ="#000000"
     };
 }
+
+for(i=0; i < aDivd.length; i++){
+    aLI[i].index = i;
+    aLI[i].onclick = function () {
+        for(var i=0; i<aLI.length; i++){
+            aDivd[i].className = '';
+            aLI[i].className = '';
+        }
+        this.className = 'selected';
+        aDivd[this.index].className= 'selected';
+        oItemPhoto.style.display = "block";
+        oItemTitle.style.display = "none";
+    }
+
+}
+
+oI.onclick = function () {
+    oItemPhoto.style.display = "none";
+    oItemTitle.style.display = "block";
+};
+
+
+
+
+
 
 

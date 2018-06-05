@@ -8,8 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="layui-v2.2.5/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
 
 
 </head>
@@ -40,13 +40,46 @@
     <div id="about">
     <div class="about-img"></div>
     <div class="about-title">
-        <div id="content">
-        <div class="selected">
-            <p>
-                Design is the method of putting form and content together. Design, just as art, has multiple definitions there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.
-            </p>
-        </div>
-        <div>
+        <ul id="content" style="width:60%; margin: 0 auto">
+        <li class="progress1 selected" style="margin: 80px 0">
+            <h4 >HTML CSS</h4>
+            <div class="progress progress-striped active" >
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                    <span class="sr-only">60% Complete (warning)</span>
+                </div>
+            </div>
+            <h4>Js Jquery</h4>
+            <div class="progress progress-striped active">
+                <div class="progress-bar"  role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+            <h4>HTML5 CSS3</h4>
+            <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+            <h4>Vue</h4>
+            <div class="progress progress-striped active">
+                <div class="progress-bar  progress-bar-info"  role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+            <h4>PHP</h4>
+            <div class="progress progress-striped active">
+                <div class="progress-bar  progress-bar-danger"  role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+            <h4>node.js</h4>
+            <div class="progress progress-striped active">
+                <div class="progress-bar  .progress-bar-warning"  role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+        </li>
+        <li>
             <table class="about-title-form">
                 <tr>
                     <td class="title">Name</td>
@@ -79,8 +112,8 @@
                     <td>919435335@qq.com</td>
                 </tr>
             </table>
-        </div>
-        </div>
+        </li>
+        </ul>
         <div id="card">
         <ul>
         <li class="selected"></li>
@@ -99,51 +132,14 @@
                     <li>DEVELOPMENT</li>
                 </ul>
                 <div id="work-blocks">
-                <ul class="selected">
-                    <li class="work-img">
-                        <img src="img/work/bw-1.jpg" alt="">
-                    </li>
-                    <li class="work-img">
-                        <img src="img/work/bw-2.png" alt="">
-                    </li>
-                    <li class="work-img">
-                        <img src="img/work/bw-3.png" alt="">
-                    </li>
-                    <li class="work-img">
-                        <img src="img/work/bw-4.png" alt="">
-                    </li>
-                    <li class="work-img">
-                        <img src="img/work/bw-5.png" alt="">
-                    </li>
-                    <li class="work-img">
-                        <img src="img/work/bw-6.png" alt="">
-                    </li>
-                </ul>
-                    <ul>
-                        <li class="work-img">
-                            <img src="img/work/bw-1.jpg" alt="">
-                        </li>
-                        <li class="work-img">
-                            <img src="img/work/bw-2.png" alt="">
-                        </li>
-                        <li class="work-img">
-                            <img src="img/work/bw-3.png" alt="">
-                        </li>
-                        <li class="work-img">
-                            <img src="img/work/bw-4.png" alt="">
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="work-img">
-                            <img src="img/work/bw-1.jpg" alt="">
-                        </li>
-                        <li class="work-img">
-                            <img src="img/work/bw-5.png" alt="">
-                        </li>
-                        <li class="work-img">
-                            <img src="img/work/bw-6.png" alt="">
-                        </li>
-                    </ul>
+                    <div id="layerDemo">
+                    <img data-method="notice" class="layui-btn first work-img1" src="img/work/bw-1.jpg" alt="">
+                    <img src="img/work/bw-2.png" data-method="notice" class="layui-btn second work-img2" alt="">
+                    <img src="img/work/bw-3.png" data-method="notice" class="layui-btn first work-img3" alt="">
+                    <img src="img/work/bw-4.png" data-method="notice" class="layui-btn first work-img4" alt="">
+                    <img src="img/work/bw-5.png" data-method="notice" class="layui-btn second work-img5" alt="">
+                    <img src="img/work/bw-6.png" data-method="notice" class="layui-btn first work-img6" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,20 +147,25 @@
     <div id="photo">
         <div id="bg-img">
             <div id="bg-content">
-                <p class="selected">
+                <div class="selected">
                 “Some of us get dipped in flat, some in satin, some in gloss....<br>
                 But every once in a while you find someone who's iridescent,<br>
                 and when you do, nothing will ever compare"<br>
-                </p>
-                <p>
-                    “Some of us get dipped in flat, some in satin, some in gloss....<br>
-                    But every once in a while you find someone who's iridescent,<br>
+                </div>
+                <div>
+                    She must have been 6 years old, this beautiful brown haired,
+                    freckle-faced image of innocence. It was pouring outside.
+                    The kind of rain that gushes over the top of rain gutters,
+                    so much in a hurry to hit the Earth, it has no time to flow down the spout.
 
-                </p>
-                <p>
-                    “Some of us get dipped in flat, some in satin, some in gloss....<br>
+                </div>
+                <div>
+                    We all stood there under the awning and just inside the door of the Wal-Mart.
+                    We all waited, some patiently, others irritated, because nature messed up their hurried day.
+                    I am always mesmerized by rainfall. I get lost in the sound and sight of the heavens washing
+                    away the dirt and dust of the world.<br>
 
-                </p>
+                </div>
             </div>
                 <ul id="photo-li">
                     <li class="selected"></li>
@@ -174,12 +175,13 @@
         </div>
     </div>
     <div id="item">
+        <div id="item-title">
         <h1 align="center">Project</h1>
         <ul id="tabs">
             <li class="selected"><i class="fa fa-television" aria-hidden="true" style="font-size: 80px;"></i>
             <span>所有</span>
             </li>
-            <li><i class="fa fa-edge" aria-hidden="true" style="font-size: 80px;"></i>
+            <li ><i class="fa fa-edge" aria-hidden="true" style="font-size: 80px;"></i>
             <span>仿站</span>
             </li>
             <li><i class="fa fa-life-ring" aria-hidden="true" style="font-size: 80px;"></i>
@@ -189,7 +191,32 @@
             <span>实战</span>
             </li>
         </ul>
-
+        </div>
+        <div id="item-photo">
+        <div>
+            <h1>所有</h1>
+            <a href="starbucks/starbuck.html" target="view_window"><img src="img/starbucks.jpg" alt=""></a>
+            <a href="transformPhoto/index.html" target="view_window"><img src="img/photos.jpg" alt=""></a>
+            <a href="clock.html" target="view_window "><img src="img/clock.jpg" alt=""></a>
+            <a href="heart.html" target="view_window"><img src="img/heart.jpg" alt=""></a>
+            <a href="http://www.miaoxinyu.cn/dist" target="view_window"><img src="img/vue.jpg" alt=""></a>
+        </div>
+        <div>
+            <h1>仿站</h1>
+            <a href="starbucks/starbuck.html"  target="view_window"><img src="img/starbucks.jpg" alt=""></a>
+        </div>
+        <div>
+            <h1>动画</h1>
+            <a href="transformPhoto/index.html" target="view_window"><img src="img/photos.jpg" alt=""></a>
+            <a href="clock.html" target="view_window"><img src="img/clock.jpg" alt=""></a>
+            <a href="heart.html" target="view_window" ><img src="img/heart.jpg" alt=""></a>
+        </div>
+        <div>
+            <h1>实战</h1>
+            <a href="http://www.miaoxinyu.cn/dist" target="view_window"><img src="img/vue.jpg" alt=""></a>
+        </div>
+            <i id="i" class="fa fa-chevron-circle-left" aria-hidden="true" style="font-size: 40px;cursor: pointer;"></i>
+        </div>
     </div>
     <div id="fellow">
         <h1 align="center" style="padding: 40px"> Contact Me</h1>
@@ -235,4 +262,9 @@
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
 <script src="js/photo.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+
+
 </html>
